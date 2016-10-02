@@ -1,0 +1,279 @@
+                        Note For Coders
+Session Names and usertype number To be Used In the Eclinic Web App
+1. For Director use: $_SESSION['director'];    and usertype = 0
+2. For Record Officer use: $_SESSION['recordoff'];    and usertype = 1
+3. For Doctors use : $_SESSION['doc'];    and usertype = 2
+3. For Lab Techs use : $_SESSION['labtech'];    and usertype = 3
+4. For Matron use : $_SESSION['matron'];    and usertype = 4
+5. For Testers use : $_SESSION['tester'];    and usertype = 5
+6. For Pharmacists use: $_SESSION['pharma'];    and usertype = 6
+So basically that's all Concerning session name and usertype
+
+0 = yes 
+1 = no
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Modes Used in this project
+1. notation (Addnotation page)
+2. alun (addlabrequestform page)
+3. alrun (add lab report page)
+4. userpermission (user permission on profile page)
+5. statusupdate (status update on profile pge)
+6. recordupdate (record update form)
+7. tester (tester page)
+8. labreg (lab registration page)
+9. login ( login page)
+10. drugupdate (pharmacy page)
+11. search (search page)
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+User Status 
+Basically For this webapp we gonna be having 4 kinda status 
+1. Active     = 0
+2. Inactive   = 1
+3. Deceased   = 2
+4. Rusticated = 3
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Names And Id's For Fields On the Registration Form, Do Follow Strictly To Avoid errors for the php and js guys and also PHP and Js Guys Thats the names you should look out for to write your scripts
+For The Biodata Form To bE field Online, Just For Recrds MH means MedicalHistory, SH means SocialHistory, DH means DrugHistory, IH means ImmunisationHistory and lastly FFS means ForFemaleStudents
+surname,
+first_name,
+middle_name,
+c_name,
+c_address,
+c_phone,
+dob,
+gender,
+relationship_status,
+programme,
+home_address,
+guardian,
+guardian_relationship,
+guardian_address,
+phoneno,
+guardian_phoneno,
+mh_1,
+mh_2,
+mh_3,
+mh_4,
+mh_5,
+mh_6,
+mh_7,
+mh_8,
+mh_9,
+mh_10,
+mh_11,
+mh_12,
+mh_13,
+mh_14,
+mh_15,
+sh_1,
+sh_2,
+sh_3,
+sh_4,
+sh_5,
+dh_1,
+dh_2,
+ih_1,
+ih_2,
+ih_3,
+ih_4,
+ih_5,
+ffs1,
+ffs2
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+For The Part E we Have, This One Will Be another form entirely
+$bm1,
+$bm2,
+$tt1,
+$tt2,
+$tt3,
+$tt4,
+$tt5,
+$tt6,
+$tt7,
+$tt8,
+$tt9,
+$tt10,
+$tt11,
+$tt12,
+$tt13,
+$tt14,
+$tt15,
+$tt16
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+For Lab Test We Have
+$lt1,
+$lt2,
+$lt3,
+$lt4,
+$lt5,
+$lt6,
+$lt,
+$lt7
+NOw Thats All Concerning Registration 
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+For The SickReport Form/ Medical Notation We have the following Names and id for the textboxes,and textarea
+$lab_required
+$prescription
+$notation
+$card_number
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+For Request Lab Test Form 
+$card_number
+$investigation
+$sample
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+For Add Lab Report Form
+$stid
+$doc_id
+$lab_req_id
+$notation_id
+$h1
+$h2
+$h3
+$h4
+$h5
+$h6
+$h7
+$h8
+$h9
+$h10
+$h11
+$h12
+$h13
+$h14
+$h15
+$h16
+$h17
+$h18
+$h19
+$h20
+$bt1
+$bt2
+$bt3
+$bt3_1
+$bt4
+$bt4_1
+$bt5
+$bt5_1
+$mb1_o
+$mb1_h
+$mb2_o
+$mb2_h
+$mb3_o
+$mb3_h
+$mb4_o
+$mb4_h
+$mbcomment
+$mbparasite
+$mb5
+$mb6
+$mb7
+$mb8
+$mb9
+$mb10
+$mb11
+$mb12
+$mb13
+$mb14
+$mb15
+$mb16
+$mb17
+$mb18
+$mb19
+$mb20
+$mb21
+$mb22
+$mb23
+$mb24
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+User Role Type Form Variables
+$usertype
+$username
+
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Update Status Form Variables
+$status
+$username
+
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Update Record Form Variables
+$surname
+$card_number
+$first_name
+$middle_name
+$c_name
+$c_address
+$c_phone
+$dob
+$gender
+$relationship_status
+$home_address
+$guardian
+$guardian_relationship
+$guardian_address
+$phoneno
+$guardian_phoneno
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Form For Tester
+$card_number
+$bm1
+$bm2
+$tt1
+$tt2
+$tt3
+$tt4
+$tt5
+$tt6
+$tt7
+$tt8
+$tt9
+$tt10
+$tt11
+$tt12
+$tt13
+$tt14
+$tt15
+$tt16
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Form For Lab Reg
+$lt1
+$lt2
+$lt3
+$lt4
+$lt5
+$lt6
+$lt7
+$lt8
+
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Form For Pharmacy
+$collected
+$notation_id
+
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+Form For Search
+$searchquery
+
+----------------------------------                                                 -----------------------------------------------------------------
+                                 --------------------------------------------------------------------
+
+Any question beep me
+
+
+
+

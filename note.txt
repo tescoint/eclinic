@@ -1,0 +1,41 @@
+$doc_user = $_SESSION['doc'];
+$docquery = "SELECT * FROM users where username = '$doc_user' ";
+$docrun_query = mysqli_query($dbc,$docquery);
+if($docrun_query){
+    $doc_data = mysqli_fetch_assoc($docrun_query);
+    $doc_id = $doc_data['id'];
+    $doc_name = "$doc_data[surname] $doc_data[first_name] $doc_data[middle_name]";
+}else{
+    echo "Unable To Grab required Details";
+}
+$patient = $_GET['p'];
+$pquery = "SELECT * FROM users where surname = '$patient'";
+$prun_query = mysqli_query($dbc, $pquery);
+if($prun_query){
+    $pdata = mysqli_fetch_assoc($dbc,$prun_query);
+    $pid = $pdata['id'];
+    $pname = "$pdata['surname'] $pdata['first_name'] $pdata['middle_name']";
+    $paddress = $pdata['home_address'];
+    $pcard_number = $pdata['card_number'];
+    $psex = $pdata['sex'];
+    if($psex == 1){
+        $sex = "Male";
+    }elseif ($psex == 2) {
+        $sex = "Female";
+    }
+    
+}else{
+    header("location:index.php");
+}
+//DOC CODE ???????????????????????????????????????????????????????????
+$doc_user = $_SESSION['doc'];
+$docquery = "SELECT * FROM users where username = '$doc_user' ";
+$docrun_query = mysqli_query($dbc,$docquery);
+if($docrun_query){
+    $doc_data = mysqli_fetch_assoc($docrun_query);
+    $doc_id = $doc_data['id'];
+    $doc_name = "$doc_data[surname] $doc_data[first_name] $doc_data[middle_name]";
+}else{
+    echo "Unable To Grab required Details";
+}
+????????????????????????????????????//

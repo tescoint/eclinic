@@ -1,0 +1,565 @@
+/* Custom design for site
+-------------------------------------------------- */
+
+
+/* Bootstrap core CSS (v3.1.1)
+-------------------------------------------------- */
+@import url(https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+@import url(https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css);
+
+
+/* Some others CSS used in the site
+-------------------------------------------------- */
+/*@import url(styles.css);*/
+@import url(normalize.css);
+@import url(docs.css);
+@import url(flags.css);
+@import url(bootstrap-tagsinput.css);
+@import url(selectize.css);
+@import url(bootstrapValidator.css);
+@import url(bootstrap-datetimepicker.css);
+
+
+/* Fonts family imports
+-------------------------------------------------- */
+/* Standard fonts */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu|Roboto|Source+Sans+Pro);
+/* Monospaced fonts */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto+Slab);
+
+
+
+
+
+/* Document body settings
+-------------------------------------------------- */
+body {
+	font-family: 'Helvetica Neue', 'Source Sans Pro', 'Roboto', sans-serif;
+	margin-top: 150px;
+	margin-bottom: 40px;
+	background-color: initial;
+	background: url(../img/body-bg-32b.png) bottom center repeat;
+	overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+	body {
+		margin-top: 100px;
+	}
+}
+
+
+
+
+
+/* Top navbar redefinition
+-------------------------------------------------- */
+.flags-set {
+	position: absolute;
+	bottom: 5px;
+	right: 0px;
+	margin-right: 5px;
+}
+@media (min-width: 768px) {
+	.flags-set {
+		margin-right: 25px;
+	}
+}
+
+.navbar-inverse, .navbar-default, .navbar-fixed-top {
+	background-color:#222;
+	border-color:#3C8DC5;
+	background: url(../img/body-bg-3.png) 50% 0 repeat;
+}
+
+.top-page-color, .bottom-page-color {
+	height: 5px;
+	width: 100%;
+	background: #3C8DC5;
+}
+
+.navbar a {
+	vertical-align: bottom;
+}
+
+.always-visible {
+	display: block;
+}
+
+
+/* Dropdown menu redefinitions
+-------------------------------------------------- */
+.navbar-nav>li>.dropdown-menu { min-width: 200px; }
+
+.navbar-nav>li>.dropdown-menu>.dropdown-header { padding-left: 10px; padding-right: 10px; }
+
+.navbar-nav>li>.dropdown-menu>li>a { padding-left: 10px; padding-right: 10px; }
+
+.navbar-nav>li>.dropdown-menu>li>a:hover {
+
+	background-image: -webkit-linear-gradient(top,#428bca 0,#428bca 100%);
+	background-image: linear-gradient(to bottom,#428bca 0,#428bca 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff428bca', GradientType=0);
+	background-color: #428bca;
+	color: #FFFFFF;
+
+}
+
+@media (max-width: 768px) {
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		background-color: #428bca;
+		color: #FFFFFF;
+	}
+}
+
+
+/* Tabbed navbar redefinitions
+-------------------------------------------------- */
+.nav-tabs {
+	border-bottom: 0px;
+}
+
+
+
+
+
+/* Sidebar redefinition
+-------------------------------------------------- */
+
+/* Settings for left sidebar navigation (bs-sidebar affix-top) */
+#sidebar-navigation-list {
+	padding-right: 70px;
+}
+
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+/*    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0; */
+    position: absolute;
+    height: 100%;
+    z-index: 1000;
+    display: block; 
+    padding: 20px 20px 20px 20px;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee; 
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-left: -20px;
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+}
+.nav-sidebar > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #428bca;
+}
+
+/* Settings for panel to be relative */
+.sidebar-parent {
+	position: relative;
+}
+
+
+
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  border-radius: 50%;
+}
+
+
+.notice-label {
+	font-weight: 700;
+	text-shadow: 2px -2px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/* Forms style
+-------------------------------------------------- */
+.form-signin {
+	max-width: 330px;
+	padding: 0px 15px 15px 15px;
+	margin: -50px auto;
+}
+@media (min-width: 768px) {
+	.form-signin  {
+		margin: 0 auto;
+	}
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+.form-signin .checkbox {
+	font-weight: normal;
+}
+.form-signin .form-control {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input {
+	/* font-family: 'Ubuntu Mono', monospace;*/
+	font-family: Monaco, Menlo, Consolas, 'Ubuntu Mono', monospace;
+}
+.form-signin input[type="login"] {
+	margin-bottom: -1px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.form-signin h2 {
+	font-weight: 700;
+}
+
+
+/* Forms style for pre-validations
+-------------------------------------------------- */
+.bootstrap-validator-form > .form-group {
+	margin-bottom: 0px;
+}
+
+/* We don't want glyphicons on datetimepickers */
+#blankbirthdate > i.glyphicon,
+#blankphone > i.glyphicon,
+#blankmobile > i.glyphicon,
+#blankmail > i.glyphicon {
+	visibility: hidden;
+}
+
+
+
+
+/* Selectize redefinitions
+-------------------------------------------------- */
+.highlight-selectize {
+
+}
+
+
+
+
+/* Modal overrides 
+-------------------------------------------------- */
+.modal-body {
+	overflow-y: auto;
+    max-height: 75%;
+}
+
+
+
+
+
+/* CV Viewer styles
+-------------------------------------------------- */
+.cvViewer .row{
+	margin: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.cvViewer .panel {
+	padding: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.cvViewer .btn-group {
+	position: relative;
+	top: 25px;
+	right: 25px;
+}
+
+
+
+
+
+/* editUserModal styles
+-------------------------------------------------- */
+#editedUserLabel{
+}
+@media (min-width: 768px) {
+	#editedUserLabel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+
+
+
+
+/* editCVModal styles
+-------------------------------------------------- */
+#editCVLabel{
+}
+@media (min-width: 768px) {
+	#editCVLabel {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+#noPadding{
+	padding: 0px;
+	margin-right: 20px;
+}
+
+/* Estilo definido especial para que los input-group no se descuadren */
+#editedCV > div.modal-body > .form-group > .input-group {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+
+
+/* uploadForm styles
+-------------------------------------------------- */
+#uploadFormLabel{
+	font-weight: 400;
+}
+@media (min-width: 768px) {
+	#uploadFormLabel {
+		font-weight: 400;
+/*		padding-left: 0px;
+		padding-right: 0px;*/
+	}
+}
+
+#uploadFormLabel.isRequired {
+	font-weight: 700;
+}
+
+#rowNum1 {
+	margin-top: 40px;
+}
+
+.uploadFormChild {
+	margin-left: 150px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+
+	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#uploadFormSendButton {
+	border-radius: 4px;
+}
+
+
+
+
+
+
+/* Responsive tables styles
+-------------------------------------------------- */
+.table {
+	font-weight: 200;
+	font-size: 12pt;
+}
+
+.table th {
+	font-weight: 500;
+	font-size: 12pt;
+}
+
+#usersTable {
+	font-size: 10pt;
+}
+
+#usersTable th {
+	font-size: 10pt;
+}
+
+
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto -60px;
+	/* Pad bottom by footer height */
+	padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	width: 100%;
+	background-color: 255,255,255,0;
+	/* background-color: #f5f5f5; */
+
+}
+
+/* Fixing some display issues for footer bars */
+#footer .container {
+	display: block;
+	width: auto;
+	max-width: 680px;
+	padding: 0 1px 1px 0;
+	margin-left: 20px;
+}
+
+#footer .container .text-muted {
+	margin: 0 0 1px 0;
+	font-weight: 200;
+}
+
+
+
+
+
+/* Bootstrap Alerts styles modifications
+-------------------------------------------------- */
+
+.top-alert-container {
+	position: fixed;
+	top: 0;
+	padding: 20px;
+	width: 100%;
+}
+
+.top-alert {
+	position: relative;
+}
+
+
+
+
+
+/* Bootstrap Badges styles redefinitions
+-------------------------------------------------- */
+
+.badge {
+	float: right;
+	display: inline-block;
+	min-width: 5px;
+	padding: 3px 7px;
+	/*font-size: 10px;*/
+	font-weight: 700;
+	color: #fff;
+	line-height: 1;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-align: center;
+	/*background-color: #999;*/
+	background-color: #3C8DC5;
+	border-radius: 10px;
+}
+
+
+/* Redefine h1 small links without decoration
+-------------------------------------------------- */
+
+h1 small a:link {
+	text-decoration: none;
+}
+
+
+
+
+/* Some usefull properties and elements predefinied
+		 MUST BE AT BOTTOM
+-------------------------------------------------- */
+.transparent {
+	background-color: transparent;
+}
+
+.scrollable {
+	overflow: auto; 
+	height: 90%;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.dummy-shape {
+	position: fixed; 
+	width: 100%;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.encapsulated {
+	margin: 30px;
+}
+
+.fixed {
+	position: fixed;
+	width: 50%;
+}
